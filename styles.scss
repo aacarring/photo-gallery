@@ -8,20 +8,20 @@
 body {
     width: 100vw;
     height: 100vh;
+    font-family: 'Gamja Flower', cursive;
+    background: $light-pink;
+    color: $dark-pink;
     @include flexDisplay();
     header {
         @include flexDisplay();
         text-align: center;
         width: 75vw;
-        height: 15vh;
-        margin-top: auto;
-        border: 2px solid black;
+        margin-top: 5vh;
         h1 {
-            display: flex;
-            font-size: 2em;
+            font-size: 3em;
+            font-weight: normal;
         }
-        p {
-            display: flex;
+        span {
             font-size: 1.5em;
         }
     }
@@ -30,22 +30,37 @@ body {
         flex-direction: row;
         height: 75vh;
         margin: 2.5vh auto;
+        @media (max-width: 400px) {
+            flex-wrap: wrap;
+        }
         .prev,
         .next {
             font-size: 3.5em;
-            margin: auto 10px;
+            margin: auto 20px;
             &:hover {
                 cursor: pointer;
-                color: salmon;
                 transform: scale(1.05);
+            }
+            @media (max-width: 600px) {
+                font-size: 3.25em;
+                margin: auto 15px;
+            }
+            @media (max-width: 550px) {
+                font-size: 3em;
+                margin: auto 10px;
+            }
+            @media (max-width: 420px) {
+                font-size: 2.5em;
+                margin: auto 5px;
             }
         }
         img {
             outline: none;
-            min-width: 300px;
-            width: 640px;
+            width: 100%;
+            min-width: 270px;
             max-height: 70vh;
             border-radius: 15px;
+            margin: auto 2.5vw;
             &:active {
                 outline: none;
                 border: none;

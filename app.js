@@ -76,3 +76,10 @@ function nextImg() {
 
 prev.addEventListener("click", prevImg);
 next.addEventListener("click", nextImg);
+document.addEventListener("keydown", (e) => {
+    if (e.keyCode == 37) {
+        prevImg();
+    } else if (e.keyCode == 39) {
+        nextImg();
+    } else return;
+})
