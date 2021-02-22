@@ -53,24 +53,24 @@ const imgs = [
 ];
 let count = 0;
 let currentSrc = imgs[count].src; 
-
-(function setDefault() {
-    currentImg.src = currentSrc;
-})();
+currentImg.src = currentSrc;
+currentImg.id = count;
 
 function prevImg() {
     if (count <= 0) {
-        count = imgs.length - 1;
+        count = imgs.length;
     }
-    currentSrc = imgs[count--].src;
+    count -= 1;
+    currentSrc = imgs[count].src;
     currentImg.src = currentSrc;
 }
 
 function nextImg() {
-    if (count >= imgs.length) {
-        count = 0;
+    if (count >= imgs.length - 1) {
+        count = -1;
     }
-    currentSrc = imgs[count++].src;
+    count += 1;
+    currentSrc = imgs[count].src;
     currentImg.src = currentSrc;
 }
 
