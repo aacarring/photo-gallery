@@ -15,13 +15,14 @@ body {
     header {
         @include flexDisplay();
         text-align: center;
-        width: 75vw;
+        width: 85vw;
         margin-top: 5vh;
         h1 {
             font-size: 3em;
             font-weight: normal;
         }
         span {
+            margin-top: 2.5vh;
             font-size: 1.5em;
         }
     }
