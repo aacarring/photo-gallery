@@ -49,6 +49,30 @@ const imgs = [
     {
         id: 12,
         src: "./imgs/watercolor-5049980_640.jpg"
+    },
+    {
+        id: 13,
+        src: "./imgs/artist-2578454_640.jpg"
+    },
+    {
+        id: 14,
+        src: "./imgs/chair-1840526_640.jpg"
+    },
+    {
+        id: 15,
+        src: "./imgs/cottage-581080_640.jpg"
+    },
+    {
+        id: 16,
+        src: "./imgs/craft-2728227_640.jpg"
+    },
+    {
+        id: 17,
+        src: "./imgs/embroidery-2937593_640.jpg"
+    },
+    {
+        id: 18,
+        src: "./imgs/woman-1768717_640.jpg"
     }
 ];
 let count = 0;
